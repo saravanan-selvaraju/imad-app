@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 var posts={
-    postone:{
+    'article-one':{
             title:`Article One | saravanan`,
             heading:'Article One',
             date:'15 feb 2017',
@@ -17,7 +17,7 @@ var posts={
             stop to watch me... i can code...</p>
             `
         },
-    posttwo:{
+    'article-two':{
             title:`Article Two | saravanan`,
             heading:'Article Two',
             date:'17 feb 2017',
@@ -30,7 +30,7 @@ var posts={
             stop to watch me... i can code...</p>
             `
         },
-    postthree:{
+    'article-three':{
             title:`Article Three | saravanan`,
             heading:'Article Three',
             date:'19 feb 2017',
