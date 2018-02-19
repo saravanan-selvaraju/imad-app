@@ -31,7 +31,7 @@ var articles={
             `
         },
     'article-three':{
-            title:`Article Three | saravanan`,
+            title:'Article Three | saravanan',
             heading:'Article Three',
             date:'19 feb 2017',
             content:`
