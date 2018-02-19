@@ -23,6 +23,8 @@ body {
     padding:25px;
 }
 hr{
-    color:blue;
     height:4px;
+}
+p{
+    padding:20px;
 }
