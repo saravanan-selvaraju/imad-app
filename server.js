@@ -73,7 +73,7 @@ function createpost(data){
                         </head>
                 <body>
                     <div class="container">
-                    <a href="/">Home</a>
+                    <a href="/" class="center">Home</a>
                     <hr>
                     <h5>${date}</h5>
                        <h1 class="center">${heading}</h1>
