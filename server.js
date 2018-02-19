@@ -3,7 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 
 var app = express();
-var posts={
+var articles={
     'article-one':{
             title:`Article One | saravanan`,
             heading:'Article One',
@@ -49,9 +49,9 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/:posts', function (req, res) {
-    var postname=req.param.posts;
-   res.send(createpost(posts[postname]));
+app.get('/:articlename', function (req, res) {
+    var articlename=req.param.articlename;
+   res.send(createpost(articles[articlename]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
