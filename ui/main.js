@@ -2,9 +2,9 @@ console.log('Loaded!');
 alert('Hi welcome to my site');
 var img=document.getElementById("image");
 function moveRight(){
-    marginleft=marginleft+5;
-    img.style.marginleft=marginleft+"px";
+    marginLeft=margineLeft+5;
+    img.style.marginLeft=marginLeft+"px";
 }
 img.onclick=function(){
-    var interval=setInterval(moveRight,50);
+    var interval=setInterval(moveRight(),50);
 };
