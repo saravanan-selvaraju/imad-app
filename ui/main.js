@@ -1,5 +1,4 @@
 console.log('Loaded!');
-alert('Hi welcome to my site');
 var img=document.getElementById("image");
 var marginLeft=0;
 function moveRight(){
