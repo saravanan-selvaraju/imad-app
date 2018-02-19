@@ -50,8 +50,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/:articlename', function (req, res) {
-    var articlename=req.param.articlename;
-   res.send(createpost(articles[articlename]));
+    var article=req.param.articlename;
+   res.send(createpost(articles[article]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
