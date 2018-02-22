@@ -59,8 +59,8 @@ app.get('/:articlename', function (req, res) {
    res.send(createpost(articles[article]));
 });
 var names=[];
-app.get('/submit-name/:name',function(req,res){
-   var name =req.params.name;
+app.get('/submit-name',function(req,res){
+   var name =req.query.name;
    names.push(name);
    res.send(JSON.stringify(names));
 });
