@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
+var count=0;
 var app = express();
 var articles={
     'article-one':{
@@ -52,6 +52,9 @@ app.get('/', function (req, res) {
 app.get('/:articlename', function (req, res) {
     var article=req.params.articlename;
    res.send(createpost(articles[article]));
+});
+app.get('/count',function(req,res){
+   res.send(count); 
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
