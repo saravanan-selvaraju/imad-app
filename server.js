@@ -54,7 +54,8 @@ app.get('/:articlename', function (req, res) {
    res.send(createpost(articles[article]));
 });
 app.get('/count',function(req,res){
-   res.send(count+""); 
+    count=count+1;
+   res.send(count.toString()); 
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
