@@ -8,7 +8,7 @@ function moveRight(){
 img.onclick=function(){
     var interval=setInterval(moveRight,50);
 };
-var nameval=document.getElemetById('name');
+var nameval=document.getElementById('name');
 var name=nameval.value;
 var submit=document.getElementById('submit');
 submit.onclick = function(){
